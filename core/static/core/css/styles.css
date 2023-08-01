@@ -2,10 +2,12 @@
     padding: 20px;
     background-color:rgb(23, 22, 21) !important;
     font-family:'Raleway', sans-serif;
+    font-size: 1rem;
     box-sizing: border-box !important;
     position: fixed;
     transition: all 600ms ease-in-out;
 }
+
 
 .scroll-animation {
   opacity: 0;
@@ -18,21 +20,6 @@
   transform: translateX(0);
 }
 
-.fade-in-animation {
-    opacity: 0;
-    animation-name: fade-in;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
 
 .image-container {
@@ -42,6 +29,7 @@
 .page-section {
     margin-top: 5rem;
     font-family:'Raleway', sans-serif;
+    
 }
 
 .section-heading-upper {
@@ -74,6 +62,14 @@ h1{
     text-decoration: solid;
     font-weight: 600;
 
+}
+
+h2{
+    font-family:'Raleway', sans-serif;
+    font-size: 3rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    text-decoration: solid;
+    font-weight: 600;
 }
 
 .section-heading-under {
@@ -122,9 +118,57 @@ footer{
 }
 
 .footer-content p{
-    max-width: 500px;
-    line-height: 28px;
-    font-size: 14px;
+    max-width: 31.25rem;
+    line-height: 1.75rem;
+    font-size: 0.875rem;
+}
+
+.lista-horarios{
+    list-style: none;
+    font-family:'Raleway', sans-serif;
+   font-size: 1.5rem;
+   font-weight: 800;
+   padding: 3rem;
+    color:rgb(248, 248, 248);
+}
+
+.item{
+    padding-bottom:10rem;
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+}
+
+.staff-images{
+    height: 300px;
+    width: 300px;
+}
+
+
+.lista-horarios {
+    color:rgb(214, 214, 214);
+}
+
+.lista-horarios .title{
+    color:rgb(214, 214, 214);
+    font-size: 1rem;
+}
+
+.fab {
+    padding-left: 0.625rem;
+    font-size: 3.125rem;
+    width: 1.875rem;
+    text-align: center;
+    text-decoration: none;
+    }
+    
+.fab:hover {
+opacity: 0.7;
+color:aqua;
+}
+
+.fa-whatsapp {
+color: white;
 }
 
 .socials{
@@ -135,8 +179,9 @@ footer{
     margin: 1rem 0 3rem 0;
 }
 
+
 .socials li{
-    margin: 0 10px;
+    margin: 0 0.625rem;
 }
 .socials a{
     text-decoration: none;
@@ -144,12 +189,12 @@ footer{
 }
 
 .shadow-image {
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 
 .socials a i {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .socials a:hover i {
@@ -158,16 +203,15 @@ footer{
 
 .footer-bottom{
     background:#000;
-    display:inline-flex;
-    width: 100vw;
-    padding:20px 0;
     display: flex;
+    width: 100vw;
+    padding:1.25rem 0;
     justify-content: center;
 }
 
 .footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
+    font-size: 0.875rem;
+    word-spacing: 0.125rem;
     text-transform: capitalize;
 }
 

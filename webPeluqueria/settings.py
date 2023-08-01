@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import os 
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--q)brrhgu8s^9ih)tck$u*u$v!dcwug^l2u6sso3gg!^(zc2^e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.110']
 
 
 # Application definition
@@ -39,11 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'contact',
-    'location',
     'services.apps.ServicesConfig',
     'fontawesomefree',
     'store.apps.StoreConfig',
-    ]
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -121,23 +120,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATICSFILES_DIRS=[
-    os.path.join(BASE_DIR,'static')
+STATICSFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
 ]
 
 STATIC_URL = 'static/'
 
 
-STATIC_ROOT=os.path.join(BASE_DIR,'static_cdn')
-GOOGLE_API_KEY=""
-RECAPTCHA_KEY=""
-RECAPTCHA_SECRET_KET=""
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
+GOOGLE_API_KEY = ""
+RECAPTCHA_KEY = ""
+RECAPTCHA_SECRET_KET = ""
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#media config
-MEDIA_URL='/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+# media config
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

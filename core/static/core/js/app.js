@@ -15,7 +15,7 @@ window.addEventListener("scroll", ()=> {
 })
 
 
-//Start Animation
+//Start Asnimation
 window.addEventListener('load', function() {
     var divLeft = document.getElementById('div-left');
     divLeft.style.opacity = '1';

@@ -7,7 +7,6 @@ class Product(models.Model):
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creacion")
     updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de edicion")
     stock= models.CharField( max_length=50,default='stock', verbose_name="Cantidad")
-
     class Meta:
         ordering = ['-created']
         verbose_name="producto"

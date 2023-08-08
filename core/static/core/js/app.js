@@ -15,12 +15,22 @@ window.addEventListener("scroll", ()=> {
 })
 
 
-//Start Asnimation
+function realizarDesplazamiento() {
+  var divLeft = document.getElementById('div-left');
+  var divRight = document.getElementById('div-right');
+
+  // Aplicar el desplazamiento a ambos divs
+  divLeft.style.opacity = '1';
+  divLeft.style.transform = 'translateX(0)';
+
+  divRight.style.opacity = '1';
+  divRight.style.transform = 'translateX(0)';
+}
+
+// Ejecutar la función automáticamente al cargar la página
 window.addEventListener('load', function() {
-    var divLeft = document.getElementById('div-left');
-    divLeft.style.opacity = '1';
-    divLeft.style.transform = 'translateX(0)';
-  });
+  realizarDesplazamiento();
+});
 
 
 //Scroll Animation

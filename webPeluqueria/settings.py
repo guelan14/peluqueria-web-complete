@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure--q)brrhgu8s^9ih)tck$u*u$v!dcwug^l2u6sso3gg!^(zc2^e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.24', '152.169.220.174']
+ALLOWED_HOSTS = ['.vercel.app','.now.sh','127.0.0.1','localhost']
 
 
 # Application definition
@@ -120,14 +120,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATICSFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
-
+STATICSFILES_DIRS =os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn','staticfiles_build','static')
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_cdn')
 GOOGLE_API_KEY = ""
 RECAPTCHA_KEY = ""
 RECAPTCHA_SECRET_KET = ""
